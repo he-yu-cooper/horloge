@@ -8,8 +8,9 @@ def set_alarm(h, m, s):
     return alarm_time
 
 def main():
-    h, m, s = 0, 0, 0
-    alarm_time = None
+    h, m, s = map(int, input("Enter the time (format: hours minutes seconds): ").split())
+    alarm_h, alarm_m, alarm_s = map(int, input("Enter the alarm time (format: hours minutes seconds): ").split())
+    alarm_time = set_alarm(alarm_h, alarm_m, alarm_s)
     while True:
         print("\r" + display_time(h, m, s), end="")
         time.sleep(1)
@@ -28,3 +29,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

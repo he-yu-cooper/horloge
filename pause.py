@@ -29,6 +29,6 @@ class Clock:
                 h = 0
 
 clock = Clock()
-clock.start()  # start clock
-time.sleep(5)  # let work for 5s
-clock.stop()  # pause clock
+clock.start()  # Start the clock
+time.sleep(5)  # Let the clock run for 5 seconds
+clock.stop()  # Stop the clock
